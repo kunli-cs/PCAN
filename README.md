@@ -1,7 +1,7 @@
 # PCAN
 Official PyTorch implementation for the paper:
 
-> **Frequency Decoupling for Motion Magnification via Multi-Level Isomorphic Architecture**, ***AAAI 2025***.
+> **Prototypical Calibrating Ambiguous Samples for Micro-Action Recognition**, ***AAAI 2025***.
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/prototypical-calibrating-ambiguous-samples/micro-action-recognition-on-ma-52)](https://paperswithcode.com/sota/micro-action-recognition-on-ma-52?p=prototypical-calibrating-ambiguous-samples)
 
