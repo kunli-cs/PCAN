@@ -1,9 +1,11 @@
 # PCAN
 Official PyTorch implementation for the paper:
 
-> **Prototypical Calibrating Ambiguous Samples for Micro-Action Recognition**, ***AAAI 2025***.
+> [**Prototypical Calibrating Ambiguous Samples for Micro-Action Recognition**]. ***AAAI 2025***.
 
+> [Kun Li](https://scholar.google.com/citations?user=UQ_bInoAAAAJ), [Dan Guo](https://scholar.google.com/citations?user=DsEONuMAAAAJ), [Guoliang Chen](https://scholar.google.com/citations?user=TQ_oIrsAAAAJ), [Chunxiao Fan](https://scholar.google.com/citations?user=J-5cNxsAAAAJ), [Jingyuan Xu](https://scholar.google.com/citations?user=AT0tjn8AAAAJ), [Zhiliang Wu](), [Hehe Fan](https://scholar.google.com/citations?user=hVuflMQAAAAJ), [Meng Wang](https://scholar.google.com/citations?user=rHagaaIAAAAJ)
 
+> Hefei University of Technology, Zhejiang University
 
 ![arXiv](https://img.shields.io/badge/arXiv-2412.14719-b31b1b.svg?style=flat)
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=kunli-cs.PCAN&left_color=green&right_color=red)
@@ -31,7 +33,13 @@ pip install -v -e .
 
 ## Data Preparation
 
-Download the MA-52 dataset with RGB and skeleton data.
+Download the MA-52 RGB data and Pose data.
+
+[![RGB Data](https://img.shields.io/badge/HuggingFace-MA--52--RGB-blue?logo=huggingface&style=flat)](https://huggingface.co/datasets/kunli-cs/MA-52)
+[![Skeleton Data](https://img.shields.io/badge/HuggingFace-MA--52--Skeleton--28kp-blue?logo=huggingface&style=flat)](https://huggingface.co/datasets/kunli-cs/MA-52_openpose_28kp)
+
+
+
 ```bash
 pip install -U huggingface_hub
 ## use hf-mirror to accelerate
@@ -47,7 +55,10 @@ mkdir -p ./data/ma52/raw_videos && unzip ./data/ma52/test.zip -d ./data/ma52/raw
 huggingface-cli download --repo-type dataset --resume-download kunli-cs/MA-52_openpose_28kp --local-dir ./data/ma52/MA-52_openpose_28kp 
 ```
 
-Download the pre-trained weights and checkpoint
+Download the pre-trained weights and checkpoint. 
+
+[![HF Model](https://img.shields.io/badge/HuggingFace-PCAN--weights-blue?logo=huggingface&style=flat)](https://huggingface.co/kunli-cs/PCAN_weights/tree/main)
+
 ```bash
 huggingface-cli download --repo-type dataset --resume-download kunli-cs/PCAN_weights --local-dir ./checkpoints 
 ```
@@ -83,6 +94,11 @@ python eval_ma52/eval_test.py
 ```
 Please submit the test predictions `./eval_ma52/submission.zip` to the [Codabench evaluation server](https://www.codabench.org/competitions/9066/). 
 
+
+## 📞 Contact Authors
+
+If you have any questions or suggestions, please do not hesitate to contact [Kun Li](mailto:kunli.hfut@gmail.com).
+
 ## 🖊️ Citation
 
 If you found this code useful, please consider cite:
@@ -96,6 +112,7 @@ If you found this code useful, please consider cite:
   pages={4815--4823},
   year={2025}
 }
+
 @article{guo2024benchmarking,
   title={Benchmarking Micro-action Recognition: Dataset, Methods, and Applications},
   author={Guo, Dan and Li, Kun and Hu, Bin and Zhang, Yan and Wang, Meng},
@@ -105,11 +122,21 @@ If you found this code useful, please consider cite:
   number={7},
   pages={6238-6252},
 }
+
 @misc{2020mmaction2,
     title={OpenMMLab's Next Generation Video Understanding Toolbox and Benchmark},
     author={MMAction2 Contributors},
     howpublished = {\url{https://github.com/open-mmlab/mmaction2}},
     year={2020}
+}
+
+@misc{duan2021revisiting,
+      title={Revisiting Skeleton-based Action Recognition},
+      author={Haodong Duan and Yue Zhao and Kai Chen and Dian Shao and Dahua Lin and Bo Dai},
+      year={2021},
+      eprint={2104.13586},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
 }
 ```
 
