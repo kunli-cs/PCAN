@@ -1,11 +1,10 @@
-# PCAN
-Official PyTorch implementation for the paper:
+<div align="center">
+<h1>Prototypical Calibrating Ambiguous Samples for Micro-Action Recognition</h1>
 
-> [**Prototypical Calibrating Ambiguous Samples for Micro-Action Recognition**]. ***AAAI 2025***.
+[**Kun Li**](https://scholar.google.com/citations?user=UQ_bInoAAAAJ), [**Dan Guo**](https://scholar.google.com/citations?user=DsEONuMAAAAJ), [**Guoliang Chen**](https://scholar.google.com/citations?user=TQ_oIrsAAAAJ), [**Chunxiao Fan**](https://scholar.google.com/citations?user=J-5cNxsAAAAJ), [**Jingyuan Xu**](https://scholar.google.com/citations?user=AT0tjn8AAAAJ), [**Zhiliang Wu**](), [**Hehe Fan**](https://scholar.google.com/citations?user=hVuflMQAAAAJ), [**Meng Wang**](https://scholar.google.com/citations?user=rHagaaIAAAAJ)
 
-> [Kun Li](https://scholar.google.com/citations?user=UQ_bInoAAAAJ), [Dan Guo](https://scholar.google.com/citations?user=DsEONuMAAAAJ), [Guoliang Chen](https://scholar.google.com/citations?user=TQ_oIrsAAAAJ), [Chunxiao Fan](https://scholar.google.com/citations?user=J-5cNxsAAAAJ), [Jingyuan Xu](https://scholar.google.com/citations?user=AT0tjn8AAAAJ), [Zhiliang Wu](), [Hehe Fan](https://scholar.google.com/citations?user=hVuflMQAAAAJ), [Meng Wang](https://scholar.google.com/citations?user=rHagaaIAAAAJ)
 
-> Hefei University of Technology, Zhejiang University
+Hefei University of Technology, Zhejiang University
 
 ![arXiv](https://img.shields.io/badge/arXiv-2412.14719-b31b1b.svg?style=flat)
 ![visitors](https://visitor-badge.laobi.icu/badge?page_id=kunli-cs.PCAN&left_color=green&right_color=red)
@@ -14,6 +13,7 @@ Official PyTorch implementation for the paper:
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/prototypical-calibrating-ambiguous-samples/micro-action-recognition-on-ma-52)](https://paperswithcode.com/sota/micro-action-recognition-on-ma-52?p=prototypical-calibrating-ambiguous-samples)
 
+</div>
 
 ## 🛠️ Installation
 
